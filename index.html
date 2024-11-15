@@ -26,8 +26,7 @@
         </ul>
 
     </nav>
-    <br>
-    <br><br><br>
+    <br><br>
     <section class="home" id="home">
           <div class="home__data">
                 <div class="home-content">
@@ -43,7 +42,7 @@
         
     </section>
 
-    
+
     <section id="carousel" class="carousel-container">
         <div class="carousel-slide active">
             <div class="carousel-content">
@@ -70,58 +69,366 @@
         </div>
    </section>  
             
-
+<br><br><br>
     <section class="about section container" id="about">
-                <div class="about__container grid">
-                      <div class="aboutimg"><img src="assets/img/about.png"></div>
+                <div class="about__containergrid">
+                      <div class="aboutimg"><img src="Images/about.png"></div>
 
                       <div class="about__data">
                           <h2 class="section__title about__title">
                               Who we really are & <br> why choose us
                           </h2>
-
+                          <br><br>
                           <p class="about__description">
-                              We have over 4000+ unbiased reviews and our customers 
-                              trust our plant process and delivery service every time
-                          </p>
-                      </div>
-                      <div class="about__details">
+                              We have over 4000+ unbiased reviews and our <br>customers 
+                              trust our plant process and delivery<br> service every time
+                          </p><br>
+                     
                               <p class="about__details-description">
                                   <i class="ri-checkbox-fill about__details-icon"></i>
                                   We always deliver on time.
-                              </p>
+                              </p><br>
                               <p class="about__details-description">
                                   <i class="ri-checkbox-fill about__details-icon"></i>
                                   We give you guides to protect and care for your plants.
-                              </p>
+                              </p><br>
                               <p class="about__details-description">
                                   <i class="ri-checkbox-fill about__details-icon"></i>
                                   We always come over for a check-up after sale.
-                              </p>
+                              </p><br>
                               <p class="about__details-description">
                                   <i class="ri-checkbox-fill about__details-icon"></i>
                                   100% money back guaranteed.
-                              </p>
-                        </div>
+                              </p><br>
+                       
 
-                          <a href="#" class="button--link button--flex">
-                              Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                          </a>
+                              <a href="#" class="button--link button--flex">
+                                  Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                              </a>
+                      </div>
                     
                 </div>
         
       </section>
            
-            
+      <section class="product section container" id="products">
+          <h2>Our Products</h2>
+      
+          <br><br>
+          <div class="filter-buttons">
+            <button onclick="filterProducts('all')" class="filter-btn active">Featured</button>
+            <button onclick="filterProducts('bestseller')" class="filter-btn">Bestseller</button>
+            <button onclick="filterProducts('latest')" class="filter-btn">Latest</button>
+          </div>
+      
+          <br><br><br>
+          <div class="product-grid">
+            <div class="product-card latest">
+              <img src="Images/product1.png" alt="American Marigold">
+              <h3>American Marigold</h3>
+              <p>$23.45</p>
+            </div>
+            <div class="product-card bestseller">
+              <img src="Images/product2.png" alt="Black Eyed Susan">
+              <h3>Black Eyed Susan</h3>
+              <p>$25.45</p>
+            </div>
+            <div class="product-card latest">
+              <img src="Images/product3.png" alt="Bleeding Heart">
+              <h3>Bleeding Heart</h3>
+              <p>$30.45</p>
+            </div>
+            <div class="product-card bestseller">
+              <img src="Images/product4.png" alt="Bloody Cranesbill">
+              <h3>Bloody Cranesbill</h3>
+              <p>$45.00</p>
+            </div>
+            <div class="product-card featured">
+              <img src="Images/product5.png" alt="Butterfly Weed">
+              <h3>Butterfly Weed</h3>
+              <p>$50.45</p>
+            </div>
+            <div class="product-card latest featured">
+              <img src="Images/product6.png" alt="Common Yarrow">
+              <h3>Common Yarrow</h3>
+              <p>$45.00</p>
+            </div>
+          
+          </div>
 
+      </section>
 
+      <section class="questions section" id="faqs">
+          <h2>Some common questions <br>were often asked</h2>
         
-    
+        <div class="faq-container">
        
-    
+          <div class="faq-questions">
+            <button onclick="showAnswer('answer1')" class="faq-question">My flowers are falling off or dying?</button>
+            <button onclick="showAnswer('answer2')" class="faq-question">What causes leaves to become pale?</button>
+            <button onclick="showAnswer('answer3')" class="faq-question">What causes brown crispy leaves?</button>
+            <button onclick="showAnswer('answer4')" class="faq-question">How do I choose a plant?</button>
+            <button onclick="showAnswer('answer5')" class="faq-question">How do I change the pots?</button>
+            <button onclick="showAnswer('answer6')" class="faq-question">Why are gnats flying around my plant?</button>
+          </div>
+
+         
+          <div class="faq-answer">
+            <div id="answer1" class="answer">If your flowers are falling off or dying, it may be due to overwatering, pests, or insufficient light. Check the soil and make sure it’s not too wet.</div>
+            <div id="answer2" class="answer">Leaves can become pale due to lack of nutrients, low light conditions, or improper watering. Ensure your plant has enough light and is properly fertilized.</div>
+            <div id="answer3" class="answer">Brown crispy leaves may result from underwatering, too much sun, or low humidity. Adjust watering and check the humidity around your plant.</div>
+            <div id="answer4" class="answer">Choosing a plant depends on your environment and light conditions. Research plant types that thrive in your setting.</div>
+            <div id="answer5" class="answer">To change pots, select a pot slightly larger than the current one, loosen the roots gently, and place the plant in fresh soil.</div>
+            <div id="answer6" class="answer">Gnats are often attracted to damp soil. Allow the top layer of soil to dry out between waterings to reduce gnat issues.</div>
+          </div>
+        </div>
+  </section>
+
+  <!-- <section class="questions section" id="faqs">
+    <h2 class="section__title-center questions__title container">
+        Some common questions <br> were often asked
+    </h2>
+
+    <div class="questions__container container grid">
+        <div class="questions__group">
+            <div class="questions__item">
+                <header class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        My flowers are falling off or dying?
+                    </h3>
+                </header>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Plants are easy way to add color energy and transform your 
+                        space but which planet is for you. Choosing the right plant.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <header class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        What causes leaves to become pale?
+                    </h3>
+                </header>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Plants are easy way to add color energy and transform your 
+                        space but which planet is for you. Choosing the right plant.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <header class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        What causes brown crispy leaves?
+                    </h3>
+                </header>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Plants are easy way to add color energy and transform your 
+                        space but which planet is for you. Choosing the right plant.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="questions__group">
+            <div class="questions__item">
+                <header class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        How do i choose a plant?
+                    </h3>
+                </header>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Plants are easy way to add color energy and transform your 
+                        space but which planet is for you. Choosing the right plant.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <header class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        How do I change the pots?
+                    </h3>
+                </header>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Plants are easy way to add color energy and transform your 
+                        space but which planet is for you. Choosing the right plant.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <header class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        Why are gnats flying around my plant?
+                    </h3>
+                </header>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Plants are easy way to add color energy and transform your 
+                        space but which planet is for you. Choosing the right plant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section id="team-section">
+  <h2>What Say Client</h2>
+  <p>Read what our clients have to say about our services and team members.</p>
+  
+  <div class="testimonial-slider">
+    <!-- Testimonial Card 1 -->
+    <div class="testimonial-card active">
+      <img src="Images/images.jpeg" alt="Client 1">
+      <h3>Jessica Davis</h3>
+      <p>Client</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies.</p>
+    </div>
+
+    <!-- Testimonial Card 2 -->
+    <div class="testimonial-card">
+      <img src="Images/images (1).jpeg" alt="Client 2">
+      <h3>Michael Smith</h3>
+      <p>Client</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies.</p>
+    </div>
+
+    <!-- Testimonial Card 3 -->
+    <div class="testimonial-card">
+      <img src="Images/images (2).jpeg" alt="Client 3">
+      <h3>Emily Johnson</h3>
+      <p>Client</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies.</p>
+    </div>
+  </div>
+
+  <!-- Pagination Bullets -->
+  <div class="pagination">
+    <span class="bullet active" onclick="showSlide(0)"></span>
+    <span class="bullet" onclick="showSlide(1)"></span>
+    <span class="bullet" onclick="showSlide(2)"></span>
+  </div>
+</section>
 
 
-    
-      <script src="script.js"></script>
+      <section class="contact section container" id="contact">                
+        <div class="contact__container grid">
+            <div class="contact__box">
+                <h2 class="section__title">
+                   Contact Info
+                </h2>
+
+                <div class="contact__data">
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle">Call us for instant support</h3>
+                        <span class="contact__description">
+                            <i class="ri-phone-line contact__icon"></i>
+                            +999 888 777
+                        </span>
+                    </div>
+
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle">Write us by mail</h3>
+                        <span class="contact__description">
+                            <i class="ri-mail-line contact__icon"></i>
+                            user@email.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="contact__form">
+                <div class="contact__inputs">
+                    <div class="contact__content">
+                        <input type="email" placeholder=" " class="contact__input">
+                        <label for="" class="contact__label">Email</label>
+                    </div>
+
+                    <div class="contact__content">
+                        <input type="text" placeholder=" " class="contact__input">
+                        <label for="" class="contact__label">Subject</label>
+                    </div>
+
+                    <div class="contact__content contact__area">
+                        <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                        <label for="" class="contact__label">Message</label>
+                    </div>
+                </div>
+
+                <button class="button button--flex">
+                    Send Message
+                    <i class="ri-arrow-right-up-line button__icon"></i>
+                </button>
+            </form>
+        </div>
+     </section>
+
+     <footer class="footer">
+      <div class="footer-container">
+          <!-- Subscription Section -->
+          <div class="footer-item">
+              <h3>🌿 PLANTEX</h3>
+              <p>Subscribe to our newsletter to stay updated</p>
+              <form id="subscribeForm" onsubmit="return handleSubscription(event)">
+                  <input type="email" id="email" placeholder="Enter your email" required>
+                  <button type="submit">Subscribe →</button>
+              </form>
+          </div>
+
+          <!-- Address Section -->
+          <div class="footer-item">
+              <h4>Our Address</h4>
+              <p>1234 - Peru</p>
+              <p>89 Liverpool - 4552</p>
+              <p>123-456-789</p>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="footer-item">
+              <h4>Contact Us</h4>
+              <p>+900 888 777</p>
+              <div class="social-icons">
+                  <a href="#">📘</a>
+                  <a href="#">🐦</a>
+                  <a href="#">📸</a>
+              </div>
+          </div>
+
+         
+          <div class="footer-item">
+              <h4>We accept all credit cards:</h4>
+              <div class="credit-cards">
+                  <img src="Images/card1.png" alt="Visa">
+                  <img src="Images/card2.png" alt="Mastercard">
+                  <img src="Images/card3.png" alt="Amex">
+                  <img src="Images/card4.png" alt="Dbc">
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          © 2024 Plantex. All rights reserved.
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
