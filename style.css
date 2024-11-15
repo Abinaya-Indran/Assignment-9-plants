@@ -102,7 +102,7 @@
   font-size: 30px;
   justify-content:space-between;
   padding: 20px 100px;
-  /* width: 90%; */
+ 
   height: 50%;
 }
 .explore{
@@ -132,7 +132,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Carousel Styles */
+
 .carousel-container {
   position: relative;
   width: 90%;
@@ -146,7 +146,7 @@ body {
 .carousel-slide {
   display:none;
   position: relative;
-  /* text-align: left; */
+
   width: 100%;
 }
 
@@ -418,7 +418,7 @@ i{
   height: 0;
 }
 
-.questions__item,
+/* .questions__item,
 .questions__header,
 .questions__item-title,
 .questions__icon,
@@ -431,7 +431,7 @@ i{
   box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
 }
 
-/*Rotate icon, change color of titles and background*/
+
 .accordion-open .questions__header,
 .accordion-open .questions__content{
   background-color: var(--first-color);
@@ -445,17 +445,16 @@ i{
 
 .accordion-open .questions__icon{
   transform: rotate(45deg);
-}
-.contact__container{
+ } .contact__container{
   row-gap: 3.5rem;
-}
-
-.contact__data{
+}  
+ .contact__data{
+ font-size: 20px;
   display: grid;
   row-gap: 2rem;
-}
+} 
 
-.contact__subtitle{
+/* .contact__subtitle{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color);
@@ -468,8 +467,15 @@ i{
   column-gap: .5rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
+} */
+.section__title{
+  font-size: 40px;
 }
-
+.contact__data{
+  font-size: 20px;
+   display: grid;
+   row-gap: 2rem;
+ } 
 .contact__icon{
   font-size: 1.25rem;
 }
@@ -484,6 +490,8 @@ i{
   position: relative;
   height: 3rem;
   border-bottom: 1px solid var(--text-color-light);
+  font-size: 25px;
+  display: flex;
 }
 
 .contact__input{
@@ -495,9 +503,7 @@ i{
   padding: 1rem 1rem 1rem 0;
   background: none;
 
-  color: var(--text-color);
 
-  
   border: none;
   outline: none;
   z-index: 1;
@@ -510,7 +516,7 @@ i{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   transition: .3s;
-}
+}  
 
 .contact__area{
   height: 7rem;
@@ -520,21 +526,33 @@ i{
   resize: none;
 }
 
-/*Input focus move up label*/
-.contact__input:focus + .contact__label{
+
+ .contact__input:focus + .contact__label{
   top: -.75rem;
   left: 0;
   font-size: var(--smaller-font-size);
   z-index: 10;
 }
 
-/*Input focus sticky top label*/
+
 .contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
   top: -.75rem;
   font-size: var(--smaller-font-size);
   z-index: 10;
+} 
+.send-button{
+  width: 20%;
+  height:15%;
+  padding: 7px;
+  background-color: #2ba72b;
+  color: white;
 }
-
+.contact__container-grid{
+  display: flex;
+  margin: 200px 400px;
+  background-color:;
+ 
+}
 
 .footer {
   background-color: #e8f5e9;
@@ -612,7 +630,7 @@ i{
 #team-section {
   text-align: center;
   padding: 50px;
-  background-color: #f0f5f4;
+  background-color:lightgray;
   width:50%;
   height: 20%;
   margin: 0 500px;
@@ -621,6 +639,7 @@ i{
 #team-section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #000;
 }
 
 #team-section p {
