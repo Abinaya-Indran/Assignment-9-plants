@@ -97,3 +97,21 @@ function handleSubscription(event) {
 }
 
 
+    // JavaScript function to initialize the map
+    function initMap() {
+      // The location (latitude and longitude)
+      const location = { lat: 37.7749, lng: -122.4194 }; // Example: San Francisco
+      
+      // Create the map, centered at the specified location
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: location,
+      });
+
+      // Add a marker at the location
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+      });
+    }
+  

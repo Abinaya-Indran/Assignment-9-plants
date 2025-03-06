@@ -687,6 +687,9 @@ i{
   background-color: #5ca68d;
 } 
 
-
+#map {
+  height: 100vh; /* Full height */
+  width: 100%;   /* Full width */
+}
 
 
